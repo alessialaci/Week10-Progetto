@@ -1,0 +1,11 @@
+<div class="container">
+    <div *ngFor="let post of posts">
+        <app-card *ngIf="!post.active" [post]="post">
+            <div class="container text-center">
+                <button type="button" class="btn btn-primary m-2" [routerLink]="['/inactivePosts', post.id]">Dettagli</button>
+                <button type="button" class="btn btn-primary m-2" (click)="upload(post.id)">Attiva</button>
+                <button type="button" class="btn btn-danger m-2" (click)="delete(post.id)">Elimina</button>
+            </div>
+        </app-card>
+    </div>
+</div>

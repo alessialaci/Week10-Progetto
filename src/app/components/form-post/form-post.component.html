@@ -1,0 +1,24 @@
+<div class="container my-5">
+    <h1 class="text-center mb-4">Aggiungi un nuovo post</h1>
+    <form>
+        <div class="mb-3">
+            <label for="titolo" class="form-label">Titolo</label>
+            <input type="text" class="form-control" #titolo>
+        </div>
+        <div class="mb-3">
+            <label for="body" class="form-label">Contenuto</label>
+            <textarea class="form-control" cols="30" rows="5" #body></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="type" class="form-label">Tipo (news, education, politic)</label>
+            <input type="text" class="form-control" #type>
+        </div>
+        <div class="mb-3">
+            <label for="author" class="form-label">Autore</label>
+            <input type="text" class="form-control" #author>
+        </div>
+        <button type="submit" class="btn btn-primary"
+            (click)="registra(titolo.value, body.value, type.value, author.value)">Aggiungi</button>
+    </form>
+</div>

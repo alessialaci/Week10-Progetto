@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg bg-light px-5">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hidden Brand</a>
+        <div>
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item m-2">
+                    <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a [routerLink]="['/activePosts']" routerLinkActive="active" class="nav-link">Post Attivi</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a [routerLink]="['/inactivePosts']" routerLinkActive="active" class="nav-link" class="nav-link">Post Inattivi</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a [routerLink]="['/utenti']" routerLinkActive="active" class="nav-link" class="nav-link">Utenti</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

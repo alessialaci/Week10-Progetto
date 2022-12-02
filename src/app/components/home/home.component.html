@@ -1,0 +1,9 @@
+<div class="container text-center mt-5">
+    <h1><span appEvidenziato>Benvenuto</span> sulla homepage</h1>
+</div>
+<div class="container text-center d-flex justify-content-evenly">
+    <a type="button" [routerLink]="['/activePosts']" routerLinkActive="active" class="btn btn-primary mt-5">Post Attivi</a>
+    <a type="button" [routerLink]="['/inactivePosts']" routerLinkActive="active" class="btn btn-primary mt-5">Post Inattivi</a>
+    <a type="button" [routerLink]="['/formPost']" routerLinkActive="active" class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-4">+</a>
+</div>
+<router-outlet></router-outlet>
